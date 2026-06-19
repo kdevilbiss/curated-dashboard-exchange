@@ -1,0 +1,8 @@
+{
+  "name": "Example Dashboard",
+  "description": "Replace with the dashboard description.",
+  "sharable": true,
+  "widgetTokens": [],
+  "widgetsConfigVersion": 2,
+  "widgets": []
+}

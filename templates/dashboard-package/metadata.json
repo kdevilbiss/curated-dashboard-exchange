@@ -1,0 +1,26 @@
+{
+  "dashboard_id": "example-dashboard",
+  "name": "Example Dashboard",
+  "category": "Examples",
+  "source_path": "Examples/Example_Dashboard.json",
+  "description": "Replace this with a customer-safe description of what the dashboard actually shows.",
+  "tags": ["Examples"],
+  "aliases": [],
+  "creator": {
+    "name": "Original Creator",
+    "email": "",
+    "url": ""
+  },
+  "curator": {
+    "name": "Kerry DeVilbiss",
+    "email": "",
+    "url": ""
+  },
+  "attribution": "Created by Original Creator. Curated and packaged by Kerry DeVilbiss.",
+  "permission_status": "pending",
+  "support_level": "Community Curated",
+  "requirements": [],
+  "known_limits": [],
+  "original_source": "",
+  "changes": []
+}

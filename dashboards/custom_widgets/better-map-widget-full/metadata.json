@@ -1,0 +1,43 @@
+{
+  "dashboard_id": "better-map-widget-full",
+  "name": "Better Map Widget (Full)",
+  "category": "Maps",
+  "namespace": "custom_widgets",
+  "source_path": "Better Map/Better_Map_Widget_Full.json",
+  "description": "Provides an enhanced map dashboard with marker clustering, status detail, weather overlays, and resource or group mapping options.",
+  "tags": ["Maps", "Custom Widget", "Weather", "Resource Status"],
+  "aliases": ["Better Map Widget"],
+  "creator": {
+    "name": "Kevin Ford",
+    "url": "https://github.com/logicmonitor/custom_widgets/"
+  },
+  "curator": {
+    "name": "Kerry DeVilbiss"
+  },
+  "attribution": "Created by Kevin Ford. Packaged as an installable dashboard by Kerry DeVilbiss.",
+  "permission_status": "public-upstream",
+  "source_model": "vendored-upstream",
+  "support_level": "Community Curated",
+  "requirements": [
+    "LogicMonitor Text widget raw HTML mode",
+    "Valid location properties on mapped groups, resources, or services",
+    "External map/CDN access from the viewer browser",
+    "Optional weather API keys for weather overlays"
+  ],
+  "known_limits": [
+    "Custom-developed widget; standard LogicMonitor Support may be limited.",
+    "Weather and overlay features depend on external API availability."
+  ],
+  "original_source": "https://github.com/logicmonitor/custom_widgets/",
+  "upstream": {
+    "repo": "https://github.com/logicmonitor/custom_widgets/",
+    "reviewed_at": "2026-06-18"
+  },
+  "changes": [
+    "Packaged latest available widget code into an installable dashboard wrapper for Curated Dashboard Exchange."
+  ],
+  "security_review": {
+    "status": "not_reviewed",
+    "notes": "Contains raw HTML/JavaScript Text widget code and can load external map, weather, and CDN resources."
+  }
+}

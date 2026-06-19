@@ -1,0 +1,110 @@
+{
+  "catalog_id": "curated-dashboard-exchange",
+  "catalog_name": "Curated Dashboard Exchange",
+  "catalog_kind": "curated",
+  "support_level": "Community Curated",
+  "generated_at": "2026-06-19T02:15:14.344Z",
+  "dashboards": [
+    {
+      "dashboard_id": "better-map-widget-full",
+      "name": "Better Map Widget (Full)",
+      "aliases": [
+        "Better Map Widget"
+      ],
+      "category": "Maps",
+      "expected_group": "",
+      "source_path": "Better Map/Better_Map_Widget_Full.json",
+      "source_url": "https://raw.githubusercontent.com/kdevilbiss/curated-dashboard-exchange/main/dashboards/custom_widgets/better-map-widget-full/dashboard.json",
+      "description": "Provides an enhanced map dashboard with marker clustering, status detail, weather overlays, and resource or group mapping options.",
+      "tags": [
+        "Maps",
+        "Custom Widget",
+        "Weather",
+        "Resource Status"
+      ],
+      "namespace": "custom_widgets",
+      "source_model": "vendored-upstream",
+      "support_level": "Community Curated",
+      "creator": {
+        "name": "Kevin Ford",
+        "url": "https://github.com/logicmonitor/custom_widgets/"
+      },
+      "curator": {
+        "name": "Kerry DeVilbiss"
+      },
+      "attribution": "Created by Kevin Ford. Packaged as an installable dashboard by Kerry DeVilbiss.",
+      "permission_status": "public-upstream",
+      "requirements": [
+        "LogicMonitor Text widget raw HTML mode",
+        "Valid location properties on mapped groups, resources, or services",
+        "External map/CDN access from the viewer browser",
+        "Optional weather API keys for weather overlays"
+      ],
+      "known_limits": [
+        "Custom-developed widget; standard LogicMonitor Support may be limited.",
+        "Weather and overlay features depend on external API availability."
+      ],
+      "original_source": "https://github.com/logicmonitor/custom_widgets/",
+      "changes": [
+        "Packaged latest available widget code into an installable dashboard wrapper for Curated Dashboard Exchange."
+      ],
+      "preview_url": "",
+      "upstream": {
+        "repo": "https://github.com/logicmonitor/custom_widgets/",
+        "reviewed_at": "2026-06-18"
+      },
+      "security_review": {
+        "status": "not_reviewed",
+        "notes": "Contains raw HTML/JavaScript Text widget code and can load external map, weather, and CDN resources."
+      },
+      "importable": true
+    },
+    {
+      "dashboard_id": "nocturne",
+      "name": "NOCturne",
+      "aliases": [],
+      "category": "NOC",
+      "expected_group": "",
+      "source_path": "NOCturne/NOCturne.json",
+      "source_url": "https://raw.githubusercontent.com/kdevilbiss/curated-dashboard-exchange/main/dashboards/kdevilbiss/nocturne/dashboard.json",
+      "description": "Turns active alerts into a generative audio and visual NOC experience.",
+      "tags": [
+        "NOC",
+        "Alerts",
+        "Audio",
+        "Custom Widget"
+      ],
+      "namespace": "kdevilbiss",
+      "source_model": "vendored-self-authored",
+      "support_level": "Community Curated",
+      "creator": {
+        "name": "Kerry DeVilbiss",
+        "url": "https://github.com/kdevilbiss/NOCturne/"
+      },
+      "curator": {
+        "name": "Kerry DeVilbiss"
+      },
+      "attribution": "Created by Kerry DeVilbiss.",
+      "permission_status": "self-authored",
+      "requirements": [
+        "LogicMonitor Text widget raw HTML mode",
+        "Visible alerts for meaningful output",
+        "Browser audio enabled by the viewer"
+      ],
+      "known_limits": [
+        "Live behavior depends on current portal alerts and browser audio permissions."
+      ],
+      "original_source": "https://github.com/kdevilbiss/NOCturne/",
+      "changes": [
+        "Packaged as an installable dashboard for Curated Dashboard Exchange."
+      ],
+      "preview_url": "",
+      "upstream": {},
+      "security_review": {
+        "status": "not_reviewed",
+        "notes": "Contains raw HTML/JavaScript Text widget code."
+      },
+      "importable": true
+    }
+  ]
+}

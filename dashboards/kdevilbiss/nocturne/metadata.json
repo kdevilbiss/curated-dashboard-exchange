@@ -1,0 +1,37 @@
+{
+  "dashboard_id": "nocturne",
+  "name": "NOCturne",
+  "category": "NOC",
+  "namespace": "kdevilbiss",
+  "source_path": "NOCturne/NOCturne.json",
+  "description": "Turns active alerts into a generative audio and visual NOC experience.",
+  "tags": ["NOC", "Alerts", "Audio", "Custom Widget"],
+  "aliases": [],
+  "creator": {
+    "name": "Kerry DeVilbiss",
+    "url": "https://github.com/kdevilbiss/NOCturne/"
+  },
+  "curator": {
+    "name": "Kerry DeVilbiss"
+  },
+  "attribution": "Created by Kerry DeVilbiss.",
+  "permission_status": "self-authored",
+  "source_model": "vendored-self-authored",
+  "support_level": "Community Curated",
+  "requirements": [
+    "LogicMonitor Text widget raw HTML mode",
+    "Visible alerts for meaningful output",
+    "Browser audio enabled by the viewer"
+  ],
+  "known_limits": [
+    "Live behavior depends on current portal alerts and browser audio permissions."
+  ],
+  "original_source": "https://github.com/kdevilbiss/NOCturne/",
+  "changes": [
+    "Packaged as an installable dashboard for Curated Dashboard Exchange."
+  ],
+  "security_review": {
+    "status": "not_reviewed",
+    "notes": "Contains raw HTML/JavaScript Text widget code."
+  }
+}

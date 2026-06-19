@@ -1,0 +1,14 @@
+{
+  "name": "curated-dashboard-exchange",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Curated manifest and dashboard packages for Dashboard Exchange.",
+  "scripts": {
+    "build": "node tools/build-catalog.mjs",
+    "validate": "node tools/validate-catalog.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
