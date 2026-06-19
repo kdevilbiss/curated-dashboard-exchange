@@ -11,6 +11,7 @@ Current catalog:
 | Dashboard | Creator | Notes |
 | --- | --- | --- |
 | Better Map Widget (Full) | Kevin Ford | Enhanced map dashboard with marker clustering, status detail, weather overlays, and mapping options. |
+| Dashboard Exchange | Kerry DeVilbiss | Dashboard-based catalog browser for discovering, reviewing, and safely importing dashboard packages. |
 | NOCturne | Kerry DeVilbiss | Turns active alerts into a generative audio and visual NOC experience. |
 
 ## How To Use
@@ -29,8 +30,33 @@ Example import locations:
 
 ```text
 Dashboard Exchange/custom_widgets/Better Map
+Dashboard Exchange/kdevilbiss/Tools
 Dashboard Exchange/kdevilbiss/NOCturne
 ```
+
+## Package Types
+
+Some dashboards may eventually be offered in more than one delivery form:
+
+| Type | What it means | Tradeoff |
+| --- | --- | --- |
+| Full / embedded | Widget code is packaged directly inside the dashboard JSON. | Larger dashboard file, but stable and self-contained. |
+| CDN / upstream-loaded | Dashboard loads widget code from an upstream or CDN URL. | Smaller wrapper and easier upstream updates, but behavior can change when the external code changes. |
+
+When both are available, the embedded package is the safer fallback for restricted or highly reviewed environments. CDN packages should be treated as upstream-maintained and require browser access to the external source.
+
+The current Better Map entry is the full embedded package.
+
+## Metadata Terms
+
+Catalog entries use a few related fields:
+
+| Field | Meaning |
+| --- | --- |
+| Support | Who stands behind the package operationally. Most entries here are `Community Curated`, not official LogicMonitor product content. |
+| Created by | Original dashboard or widget creator. |
+| Packaged by | Person who prepared and reviewed the dashboard for this catalog. |
+| Attribution | Extra credit, permission, or licensing context when it adds information beyond creator and packager. |
 
 ## Support
 
