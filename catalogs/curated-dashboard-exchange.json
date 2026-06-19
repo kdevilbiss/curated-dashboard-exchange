@@ -3,7 +3,7 @@
   "catalog_name": "Curated Dashboard Exchange",
   "catalog_kind": "curated",
   "support_level": "Community Curated",
-  "generated_at": "2026-06-19T02:15:14.344Z",
+  "generated_at": "2026-06-19T03:26:17.333Z",
   "dashboards": [
     {
       "dashboard_id": "better-map-widget-full",
@@ -56,6 +56,58 @@
       "security_review": {
         "status": "not_reviewed",
         "notes": "Contains raw HTML/JavaScript Text widget code and can load external map, weather, and CDN resources."
+      },
+      "importable": true
+    },
+    {
+      "dashboard_id": "dashboard-exchange",
+      "name": "Dashboard Exchange",
+      "aliases": [
+        "LM Dashboard Exchange"
+      ],
+      "category": "Tools",
+      "expected_group": "",
+      "source_path": "Tools/Dashboard_Exchange.json",
+      "source_url": "https://raw.githubusercontent.com/kdevilbiss/curated-dashboard-exchange/main/dashboards/kdevilbiss/dashboard-exchange/dashboard.json",
+      "description": "Lets you browse, review, and safely import dashboard packages from inside a LogicMonitor dashboard.",
+      "tags": [
+        "Dashboard Management",
+        "Catalog",
+        "Import",
+        "Tools"
+      ],
+      "namespace": "kdevilbiss",
+      "source_model": "vendored-self-authored",
+      "support_level": "Community Curated",
+      "creator": {
+        "name": "Kerry DeVilbiss",
+        "url": "https://github.com/kdevilbiss/curated-dashboard-exchange/"
+      },
+      "curator": {
+        "name": "Kerry DeVilbiss"
+      },
+      "attribution": "Created by Kerry DeVilbiss.",
+      "permission_status": "self-authored",
+      "requirements": [
+        "LogicMonitor Text widget raw HTML mode",
+        "Viewer permission to see dashboard groups and dashboards",
+        "Dashboard manage permissions for imports",
+        "Browser access to configured catalog and dashboard source URLs"
+      ],
+      "known_limits": [
+        "Uses the viewer's current LogicMonitor browser session for LogicMonitor API calls.",
+        "Imports safe copies under a managed Dashboard Exchange group and does not update existing dashboards.",
+        "Import is blocked if an existing Dashboard Exchange group is present without the managed marker."
+      ],
+      "original_source": "https://github.com/kdevilbiss/curated-dashboard-exchange/",
+      "changes": [
+        "Packaged as an installable dashboard for Curated Dashboard Exchange."
+      ],
+      "preview_url": "",
+      "upstream": {},
+      "security_review": {
+        "status": "self_reviewed",
+        "notes": "Contains raw HTML/JavaScript Text widget code. Uses same-origin LogicMonitor dashboard APIs through the viewer's browser session and loads catalog/source JSON from configured public URLs."
       },
       "importable": true
     },

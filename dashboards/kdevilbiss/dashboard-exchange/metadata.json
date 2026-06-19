@@ -1,0 +1,40 @@
+{
+  "dashboard_id": "dashboard-exchange",
+  "name": "Dashboard Exchange",
+  "category": "Tools",
+  "namespace": "kdevilbiss",
+  "source_path": "Tools/Dashboard_Exchange.json",
+  "description": "Lets you browse, review, and safely import dashboard packages from inside a LogicMonitor dashboard.",
+  "tags": ["Dashboard Management", "Catalog", "Import", "Tools"],
+  "aliases": ["LM Dashboard Exchange"],
+  "creator": {
+    "name": "Kerry DeVilbiss",
+    "url": "https://github.com/kdevilbiss/curated-dashboard-exchange/"
+  },
+  "curator": {
+    "name": "Kerry DeVilbiss"
+  },
+  "attribution": "Created by Kerry DeVilbiss.",
+  "permission_status": "self-authored",
+  "source_model": "vendored-self-authored",
+  "support_level": "Community Curated",
+  "requirements": [
+    "LogicMonitor Text widget raw HTML mode",
+    "Viewer permission to see dashboard groups and dashboards",
+    "Dashboard manage permissions for imports",
+    "Browser access to configured catalog and dashboard source URLs"
+  ],
+  "known_limits": [
+    "Uses the viewer's current LogicMonitor browser session for LogicMonitor API calls.",
+    "Imports safe copies under a managed Dashboard Exchange group and does not update existing dashboards.",
+    "Import is blocked if an existing Dashboard Exchange group is present without the managed marker."
+  ],
+  "original_source": "https://github.com/kdevilbiss/curated-dashboard-exchange/",
+  "changes": [
+    "Packaged as an installable dashboard for Curated Dashboard Exchange."
+  ],
+  "security_review": {
+    "status": "self_reviewed",
+    "notes": "Contains raw HTML/JavaScript Text widget code. Uses same-origin LogicMonitor dashboard APIs through the viewer's browser session and loads catalog/source JSON from configured public URLs."
+  }
+}
