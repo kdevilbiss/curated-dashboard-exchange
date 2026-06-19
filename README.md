@@ -1,119 +1,51 @@
 # Curated Dashboard Exchange
 
-Curated Dashboard Exchange is a personally curated catalog of useful LogicMonitor dashboards, widgets, and dashboard-adjacent experiments that are not part of the official LogicMonitor dashboard catalog.
+Curated Dashboard Exchange is a small catalog of installable LogicMonitor dashboards that are useful, experimental, or community-built, but not part of the official LogicMonitor dashboard catalog.
 
-## Principles
+These dashboards are meant to be installed through Dashboard Exchange as safe copies. They do not overwrite existing dashboards in your portal.
 
-- Attribution is required.
-- Permission/status must be recorded before a dashboard is published.
-- Descriptions should say what the dashboard actually does.
-- Dashboards should import as safe copies under `Dashboard Exchange/...`.
-- Existing customer dashboards should not be modified, overwritten, renamed, or deleted.
-- Experimental work should be labeled honestly.
+## What's Included
 
-## Repository Layout
+Current catalog:
 
-```text
-catalogs/
-  curated-dashboard-exchange.json
-dashboards/
-  <author-or-source>/
-    <dashboard-slug>/
-      metadata.json
-      dashboard.json
-      DASHBOARD.md
-      preview.png
-contributors/
-  <person>.md
-docs/
-  intake-checklist.md
-  manifest-contract.md
-templates/
-  dashboard-package/
-tools/
-  build-catalog.mjs
-  validate-catalog.mjs
-```
+| Dashboard | Creator | Notes |
+| --- | --- | --- |
+| Better Map Widget (Full) | Kevin Ford | Enhanced map dashboard with marker clustering, status detail, weather overlays, and mapping options. |
+| NOCturne | Kerry DeVilbiss | Turns active alerts into a generative audio and visual NOC experience. |
 
-## Current Catalog
+## How To Use
 
-The starter catalog is intentionally empty:
+Use Dashboard Exchange and switch the catalog selector from `Official` to `Custom`.
+
+The custom catalog manifest is:
 
 ```text
-catalogs/curated-dashboard-exchange.json
+https://raw.githubusercontent.com/kdevilbiss/curated-dashboard-exchange/main/catalogs/curated-dashboard-exchange.json
 ```
 
-After this repo is published somewhere public, Dashboard Exchange can read that catalog through its `ManifestUrl` token.
+When imported, dashboards are created under a managed dashboard group named `Dashboard Exchange`. Existing dashboards are not modified.
 
-## Adding a Dashboard
-
-1. Copy `templates/dashboard-package/` into `dashboards/<author-or-source>/<dashboard-slug>/`.
-2. Rename `dashboard.json.example` to `dashboard.json`.
-3. Fill in `metadata.json`.
-4. Fill in `DASHBOARD.md`.
-5. Add a preview image if available.
-6. Run:
-
-```bash
-npm run build
-npm run validate
-```
-
-## Build
-
-This repo uses no runtime dependencies. The scripts use Node.js built-ins.
-
-```bash
-npm run build
-```
-
-`tools/build-catalog.mjs` scans dashboard package metadata and writes `catalogs/curated-dashboard-exchange.json`.
-
-By default, the build uses:
+Example import locations:
 
 ```text
-https://raw.githubusercontent.com/kdevilbiss/curated-dashboard-exchange/main
+Dashboard Exchange/custom_widgets/Better Map
+Dashboard Exchange/kdevilbiss/NOCturne
 ```
 
-Set `RAW_BASE_URL` if you need to build against a different public raw URL:
+## Support
 
-```bash
-RAW_BASE_URL="https://raw.githubusercontent.com/<owner>/curated-dashboard-exchange/main" npm run build
-```
+Items in this catalog are `Community Curated`.
 
-The repo must be public, or the generated raw GitHub URLs will not load from a LogicMonitor portal.
+That means they are packaged and reviewed for practical use, but they are not official LogicMonitor product content unless explicitly stated otherwise. Some dashboards use raw HTML/JavaScript Text widgets and may call external browser-side services such as map, weather, or CDN resources.
 
-## Validate
-
-```bash
-npm run validate
-```
-
-Validation checks required catalog fields, duplicate identities, attribution fields, source paths, and source URLs.
+Review each dashboard's notes before importing it into a customer portal.
 
 ## Attribution
 
-Every dashboard package must include:
+Attribution is included in each dashboard package and, where practical, in the dashboard description itself.
 
-- Original creator.
-- Curator/packager.
-- Permission or publication status.
-- Original source when known.
-- Changes made during curation.
-- Requirements and known limitations.
+If something here is based on your work and the attribution is wrong or incomplete, open an issue or contact the curator so it can be fixed.
 
-This catalog was inspired in part by Kevin Ford's Better Map widget work and the broader use of raw HTML Text widgets to extend LogicMonitor dashboard experiences.
+## For Maintainers
 
-## Support Level
-
-Unless a dashboard package says otherwise, entries in this catalog should be treated as:
-
-```text
-Community Curated
-```
-
-That means useful, reviewed, and packaged with care, but not official LogicMonitor product content.
-
-## License
-
-No broad license is granted yet. Each dashboard package must record its own permission/status before publication.
+Maintainer workflow, package format, build steps, and validation details live in [docs/maintainer-guide.md](docs/maintainer-guide.md).
