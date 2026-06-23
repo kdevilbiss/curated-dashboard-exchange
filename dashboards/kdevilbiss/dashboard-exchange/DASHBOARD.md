@@ -1,6 +1,6 @@
 # Dashboard Exchange
 
-We put the Dashboard Exchange in the Dashboard Exchange so you can Dashboard Exchange while you Dashboard Exchange.
+We put the Dashboard Exchange inside a dashboard, inside the Dashboard Exchange, so you can exchange dashboards while you're dashboarding Exchange.
 
 ## Summary
 
